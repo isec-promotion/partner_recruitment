@@ -13,6 +13,31 @@
  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
  <![endif]-->
  <script src="sample.js"></script>
+ <!-- Global site tag (gtag.js) - Google Ads: 597524462 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-597524462"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-597524462');
+</script>
+<!-- Event snippet for 代理店サービス申し込み conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-597524462/9KU8CL3e4PABEO7_9ZwC',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
  </head>
  
  <body>
@@ -28,7 +53,7 @@
 			<img src="img/img01_header.jpg" width="100%" alt="事業の一つに防犯カメラ、レコーダーの設置業はいかがでしょうか？">
 		</picture>
 		<div id="body_1_space">
-			<a href="https://isecj.jp/contact/"  target="_blank">
+			<a onclick="return gtag_report_conversion('https://isecj.jp/contact/');" href="https://isecj.jp/contact/"  target="_blank">
 				<picture>
 					<source media="(max-width: 640px)" srcset="img/img02_button_small.png">
 					<source media="(min-width: 641px)" srcset="img/img02_button.png">
@@ -95,7 +120,7 @@
 					<source media="(min-width: 641px)" srcset="img/img14_partner.png">
 					<img class="body_5_margin" src="img/img14_partner.png" width="100%" alt="アイゼックで防犯カメラやレコーダーの代理店になってみませんか？">
 				</picture>
-				<a href="https://isecj.jp/contact/"  target="_blank">
+				<a onclick="return gtag_report_conversion('https://isecj.jp/contact/');" href="https://isecj.jp/contact/"  target="_blank">
 					<picture>
 						<source media="(max-width: 640px)" srcset="img/img02_button_small.png">
 						<source media="(min-width: 641px)" srcset="img/img13_button.png">
@@ -424,7 +449,7 @@
 				<source media="(min-width: 641px)" srcset="img/img46_toiawase.jpg">
 				<img class="body_10_box_img" src="img/img46_toiawase.jpg" width="100%" alt="代理店のご要望はアイゼックにぜひお問い合わせください。">
 			</picture>
-			<a href="https://isecj.jp/contact/"  target="_blank">
+			<a onclick="return gtag_report_conversion('https://isecj.jp/contact/');" href="https://isecj.jp/contact/"  target="_blank">
 				<picture>
 					<source media="(max-width: 640px)" srcset="img/img02_button_small.png">
 					<source media="(min-width: 641px)" srcset="img/img13_button.png">
